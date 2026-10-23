@@ -7,32 +7,29 @@
 @media(max-width:480px){.hero-grid{grid-template-columns:1fr}.headshot-frame{max-width:200px}.hero-photo{grid-row:1}.hero h1{font-size:2.8rem}.fact-grid,.project-grid,.skills-grid,.credentials-grid{grid-template-columns:1fr}.project-card:last-child{grid-column:auto}.project-card:last-child .project-card-image{aspect-ratio:1.55}.list-block{grid-template-columns:1fr;gap:4px}.section-heading{align-items:start;flex-direction:column;gap:8px}.contact-panel{padding:25px 20px}.cert-row{flex-direction:column;gap:4px}.page-hero h1{font-size:2.3rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project-card,.project-card-image img{transition:none}}
 
-
-/* Hero headshot: compact portrait with full head and shoulders visible */
-.hero-photo {
-  width: 100%;
-  max-width: 250px;
-  justify-self: center;
-  align-self: center;
-}
-.headshot-frame {
-  width: 100%;
-  height: 315px;
-}
-.headshot-frame img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-width: none;
-  aspect-ratio: auto;
-  object-fit: cover;
-  object-position: center center;
-}
-@media (max-width: 740px) {
-  .hero-photo { max-width: 170px; }
-  .headshot-frame { height: 215px; }
-}
-@media (max-width: 480px) {
-  .hero-photo { justify-self: start; max-width: 170px; }
-  .headshot-frame { height: 215px; }
-}
+/* Featured Autodesk coursework — Oct 2026 homepage enhancement */
+.eit-highlight{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:24px 27px;background:var(--surface-soft);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:7px;margin-bottom:36px}
+.eit-highlight .provider,.featured-credential .provider,.compact-credential .provider{font-size:.71rem;color:var(--accent);font-weight:600;letter-spacing:.055em}
+.eit-highlight h3{font:600 1.15rem/1.4 var(--sans);margin:6px 0}.eit-highlight p{max-width:680px;font-size:.87rem;line-height:1.55}
+.credential-subheading{margin-bottom:18px}.credential-subheading h3{font:600 1.06rem/1.4 var(--sans);margin:0 0 5px}.credential-subheading p{font-size:.87rem}
+.featured-credential-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.featured-credential{background:#fff;border:1px solid var(--rule);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.cert-preview{display:block;padding:15px;background:var(--surface-soft);border-bottom:1px solid var(--rule)}
+.cert-preview img{display:block;width:100%;height:auto;aspect-ratio:792/612;object-fit:contain;border:1px solid #e5e0db;border-radius:3px;box-shadow:0 3px 12px rgba(38,31,27,.08);transition:transform .22s}
+.cert-preview:hover img,.cert-preview:focus-visible img{transform:scale(1.014)}
+.featured-credential-info{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.featured-credential-info h3{font:600 1.04rem/1.4 var(--sans);margin:8px 0}
+.featured-credential-info p{font-size:.85rem;line-height:1.55;margin-bottom:16px}
+.featured-credential-info .links{display:flex;flex-wrap:wrap;gap:14px;margin-top:auto;font-size:.81rem;font-weight:600}
+.featured-credential-info .links a{text-decoration:none}
+.credential-clarification{font-size:.8rem;color:var(--ink-soft);margin:13px 0 0;line-height:1.5}
+.additional-credential-heading{margin-top:36px}
+.compact-credentials{border:1px solid var(--rule);border-radius:7px;overflow:hidden;background:#fff}
+.compact-credential{padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--rule)}
+.compact-credential:last-child{border-bottom:none}
+.compact-credential h3{font:600 .94rem/1.38 var(--sans);margin:3px 0 4px}
+.compact-credential p{font-size:.8rem;margin:0;line-height:1.45}
+.compact-credential .links{display:flex;gap:14px;white-space:nowrap;font-size:.8rem;font-weight:600}
+.compact-credential .links a{text-decoration:none}
+@media(max-width:740px){.eit-highlight{padding:20px;align-items:flex-start}.featured-credential-grid{gap:14px}.cert-preview{padding:10px}.featured-credential-info{padding:15px}.compact-credential{padding:15px}}
+@media(max-width:570px){.eit-highlight{flex-direction:column;gap:10px}.featured-credential-grid{grid-template-columns:1fr}.compact-credential{flex-direction:column;align-items:flex-start;gap:9px}}
