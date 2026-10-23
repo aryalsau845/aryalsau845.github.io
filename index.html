@@ -2,7 +2,42 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#FAFAF8"><meta name="description" content="Saugat Aryal, E.I.T. — hydrologic and hydraulic modeling, flood risk, water resources engineering, geospatial analysis, and river modeling."><title>Saugat Aryal | Hydrology & Water Resources Engineering</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css"><link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/styles.css?v=portrait-rachana-20261023"><link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+<!-- Portrait sizing adapted from Rachana Kafle's original homepage -->
+<style>
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) 200px;
+    align-items: center;
+    gap: clamp(28px, 5vw, 65px);
+  }
+  .hero-photo { width: 200px; height: 220px; justify-self: center; align-self: center; }
+  .hero-photo .headshot-frame {
+    box-sizing: border-box;
+    width: 200px;
+    height: 220px;
+    border: 3px solid var(--surface);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .hero-photo .headshot-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: top center;
+  }
+  @media (max-width: 740px) {
+    .hero-grid { grid-template-columns: minmax(0, 1fr) 160px; gap: 22px; }
+    .hero-photo, .hero-photo .headshot-frame { width: 160px; height: 180px; }
+  }
+  @media (max-width: 480px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-photo { grid-row: 1; justify-self: start; }
+  }
+</style>
 </head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="header-inner">
 <a class="brand" href="index.html">Saugat Aryal</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
 <nav aria-label="Main navigation"><ul class="nav-links" id="primary-navigation"><li><a href="index.html#about">About</a></li><li><a href="index.html#projects">Projects</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#credentials">Credentials</a></li><li><a href="index.html#experience">Experience</a></li><li><a href="index.html#publications">Publications</a></li><li><a href="index.html#contact">Contact</a></li></ul></nav></div></header>
